@@ -92,4 +92,4 @@ tidy = aggregate(All_data_set, by=list(activity = All_data_set$activity, subject
 # Remove the subject and activity column, since a mean of those has no use
 tidy[,90] = NULL
 tidy[,89] = NULL
-write.table(tidy, "UCI_tidy_data_set.txt", sep="\t")
+write.table(tidy, "UCI_tidy_data_set.txt", sep="\t" )
